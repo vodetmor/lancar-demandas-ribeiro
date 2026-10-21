@@ -1,0 +1,31 @@
+# Sites publicados na Vercel (um por linha; # comenta). Atualizado 17/10/2026.
+# Ribeiro (18/10): só as demandas atuais. Sites antigos ficam comentados e só são medidos se derem problema.
+# Demandas atuais (medir sempre)
+https://luiza-rabelo-df.vercel.app/
+https://medicmais-sobradinho-site.vercel.app/
+# https://green-fit-noroeste.vercel.app/
+# https://bella-ricca-site.vercel.app/
+# https://sant-odontologia.vercel.app/
+# https://dom-tempero.vercel.app/
+# https://z-lar-imoveis.vercel.app/
+# https://distrito-solar.vercel.app/
+# https://lorrane-nail-beauty.vercel.app/
+# https://projeto-floricultura.vercel.app/
+# https://carmed.vercel.app/
+# https://assessoriakrov.vercel.app/
+# https://portfolio-rafael-rego.vercel.app/
+# https://portifolio-da-mariana.vercel.app/
+# Eventos
+# https://extase-fest.vercel.app/
+# https://after-do-chefe.vercel.app/
+# https://festa-ingressos.vercel.app/
+# https://passfest-landing.vercel.app/
+# Agência / produtos
+# https://agencia-ruan.vercel.app/
+# https://portifolio-ruan.vercel.app/
+# https://imobiliaria-3d.vercel.app/
+# https://cardapio.vercel.app/
+# https://comandas.vercel.app/
+# https://link.vercel.app/
+# Duplicados ou fora do ar (conferir antes de medir): luiza-rabelo, bella-ricca-site-1, cl-nica-bella-ricca,
+# extase-fest-, festa-ingressos-q2ki, mariana-conta-2(-ku4i), portifolio-da-mariana-g4dz/-qvtc, 3d-ibmov, bright-welcomer-bot
