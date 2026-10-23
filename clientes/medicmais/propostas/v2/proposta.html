@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Proposta MedicMais Sobradinho · v2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+@page{size:960px 540px;margin:0}
+:root{--red:#d7232b;--ink:#1d1b1c;--muted:#5f5a5c;--line:#e3dfe0;--soft:#f2f1f2;--ok:#1f8a4c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Inter",sans-serif;color:var(--ink);font-size:13px;line-height:1.5}
+.slide{width:960px;height:540px;position:relative;overflow:hidden;page-break-after:always;padding:30px 40px 0;background:#fff}
+.slide.alt{background:var(--soft)}
+.eyebrow{font-family:"Poppins";font-weight:700;color:var(--red);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+h2{font-family:"Poppins";font-weight:800;font-size:29px;line-height:1.15;letter-spacing:-.01em;max-width:720px}
+h2 em,h1 em{font-style:normal;color:var(--red)}
+.foot{position:absolute;left:40px;right:40px;bottom:18px;display:flex;justify-content:space-between;font-size:8.5px;color:var(--muted)}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.alt .card{border-color:#e6e2e3}
+.num{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:5px;background:var(--red);color:#fff;font-family:"Poppins";font-weight:700;font-size:10px;margin-right:8px;flex:none}
+h3{font-family:"Poppins";font-weight:700;font-size:15px;display:flex;align-items:center;margin-bottom:7px}
+ul.plus{list-style:none;display:grid;gap:4px;margin-top:6px}
+ul.plus li{padding-left:12px;position:relative}
+ul.plus li:before{content:"+";position:absolute;left:0;color:var(--red);font-weight:700}
+ul.check{list-style:none;display:grid;gap:9px}
+ul.check li{display:flex;gap:10px;align-items:flex-start;font-size:13px}
+ul.check li:before{content:"✓";color:#fff;background:var(--red);border-radius:50%;width:16px;height:16px;flex:none;display:grid;place-items:center;font-size:9px;font-weight:700;margin-top:1px}
+.gain{color:var(--red);font-weight:600;margin-top:8px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.big{font-family:"Poppins";font-weight:800;color:var(--red);font-size:28px;line-height:1.1}
+.lead{font-size:12.5px;max-width:620px}
+.mt{margin-top:22px}
+.new{display:inline-block;background:var(--red);color:#fff;font-family:"Poppins";font-weight:700;font-size:7.5px;letter-spacing:.08em;text-transform:uppercase;border-radius:999px;padding:2px 8px;margin-left:8px;vertical-align:middle}
+/* capa */
+.cover{display:grid;grid-template-columns:1fr 1fr;padding:0}
+.cover .l{padding:36px 40px;display:flex;flex-direction:column}
+.cover .r{background:var(--red);display:grid;place-items:center}
+.cover h1{font-family:"Poppins";font-weight:800;font-size:33px;line-height:1.1;letter-spacing:-.01em;margin:auto 0 14px}
+.cover p{font-size:12.5px;color:var(--muted);max-width:360px}
+/* chat */
+.chat{background:#efe7de;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:6px}
+.chat .b{max-width:86%;padding:6px 9px;border-radius:9px;font-size:11px;line-height:1.38;white-space:pre-line}
+.chat .in{background:#fff;align-self:flex-start;border-top-left-radius:2px}
+.chat .out{background:#d9fdd3;align-self:flex-end;border-top-right-radius:2px}
+.chat .act{align-self:center;background:#e5f4ea;color:var(--ok);font-weight:600;font-size:8.5px;border-radius:999px;padding:3px 10px}
+/* tabela comparativa */
+table{border-collapse:collapse;width:100%;font-size:12px}
+td,th{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-family:"Poppins";font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+td.bad{color:var(--muted)} td.good{font-weight:600}
+/* preços */
+.price{font-family:"Poppins";font-weight:800;color:var(--red);font-size:22px;margin:4px 0 6px}
+.price small{font-size:9px;color:var(--muted);font-weight:600}
+.reco{border:2px solid var(--red);position:relative}
+.reco:before{content:"Recomendado";position:absolute;top:-9px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-family:"Poppins";font-weight:700;font-size:7.5px;padding:2px 10px;border-radius:999px}
+.row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);font-weight:600}
+.row{gap:8px;font-size:12px}.row span:last-child{font-variant-numeric:tabular-nums;white-space:nowrap}
+.small{font-size:10px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.steps .card{padding:12px}
+.steps b{display:block;font-family:"Poppins";font-size:13px;margin:6px 0 3px}
+.month b{font-family:"Poppins";font-size:14px;display:block}
+.month .m{color:var(--red);font-family:"Poppins";font-weight:700;font-size:10px}
+</style>
+</head>
+<body>
+
+<!-- 1 CAPA -->
+<section class="slide cover">
+  <div class="l">
+    <img src="logo.png" alt="MedicMais" style="height:44px;width:auto;align-self:flex-start">
+    <h1>Do primeiro “oi” no WhatsApp à <em>consulta marcada</em></h1>
+    <p>Proposta atualizada: o site e a presença no Google, agora com um atendente no WhatsApp que conversa como a recepção e marca a consulta sozinho, a qualquer hora.</p>
+    <p class="small" style="margin-top:22px">Proposta preparada para a MedicMais Sobradinho-DF · versão 2 · outubro de 2026</p>
+  </div>
+  <div class="r"><img src="icone-branco.png" alt="" style="width:210px;height:auto;opacity:.95"></div>
+</section>
+
+<!-- 2 O QUE MUDOU -->
+<section class="slide alt">
+  <div class="eyebrow">O que muda nesta versão</div>
+  <h2>Quem chama no WhatsApp <em>sai com horário marcado</em>, mesmo à noite e no domingo</h2>
+  <div class="g3 mt">
+    <div class="card"><h3><span class="num">1</span>Continua igual</h3>
+      <p>Site novo, Google Meu Negócio, endereço certo em todo lugar e vídeos editados a partir do que a equipe grava.</p></div>
+    <div class="card" style="border:2px solid var(--red)"><h3><span class="num">2</span>Entra agora<span class="new">novo</span></h3>
+      <p>Atendente de WhatsApp com inteligência artificial: entende o que o paciente escreve, tira dúvidas, oferece horários livres e marca a consulta.</p></div>
+    <div class="card"><h3><span class="num">3</span>Sai do escopo</h3>
+      <p>O CRM separado da proposta anterior. Ele vem dentro do atendente: cada conversa já fica registrada com etapa, consulta e retorno.</p></div>
+  </div>
+  <div class="g4 mt">
+    <div class="card"><div class="big">4,7</div><b>Nota no Google</b><div class="small">99 avaliações</div></div>
+    <div class="card"><div class="big">30+</div><b>Edições do Saúde Day</b><div class="small">Atendimento gratuito</div></div>
+    <div class="card"><div class="big">550 m²</div><b>Estrutura nova</b><div class="small">Médico, dentista e exames</div></div>
+    <div class="card"><div class="big">24 h</div><b>Atendimento no WhatsApp</b><div class="small">Com o atendente novo</div></div>
+  </div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Fonte: perfil da clínica no Google Maps e Instagram, outubro de 2026</span></div>
+</section>
+
+<!-- 3 PROBLEMA WHATSAPP -->
+<section class="slide">
+  <div class="eyebrow">Diagnóstico do WhatsApp</div>
+  <h2>Hoje o paciente que chama fora de hora <em>marca em outro lugar</em></h2>
+  <div class="g2 mt" style="grid-template-columns:1.15fr 1fr">
+    <ul class="check">
+      <li><span><b>A recepção não dá conta de tudo.</b> Quem atende o balcão e o telefone responde o WhatsApp no intervalo, e a mensagem espera.</span></li>
+      <li><span><b>À noite e no fim de semana ninguém responde.</b> É quando o paciente tem tempo de procurar dentista pelo celular.</span></li>
+      <li><span><b>Robô de “digite 1” afasta o público 50+.</b> Menu de opções parece frio e confunde quem só quer conversar.</span></li>
+      <li><span><b>Ninguém lembra o paciente da consulta.</b> Falta sem aviso vira horário vazio na agenda.</span></li>
+      <li><span><b>Orçamento de implante fica esquecido.</b> Quem não fechou na hora não recebe retorno.</span></li>
+    </ul>
+    <div class="card" style="align-self:start">
+      <div class="eyebrow" style="margin-bottom:6px">Robô comum × atendente MedicMais</div>
+      <table>
+        <tr><td class="bad">“Digite 1 para agendar”</td><td class="good">Entende “quebrei o dente, queria ver implante”</td></tr>
+        <tr><td class="bad">Manda o link e some</td><td class="good">Oferece horários livres e marca na agenda</td></tr>
+        <tr><td class="bad">Não sabe o que fazer com dúvida</td><td class="good">Responde dúvidas e passa para a recepção quando precisa</td></tr>
+        <tr><td class="bad">Termina no “obrigado”</td><td class="good">Termina com dia, hora, endereço e lembrete</td></tr>
+      </table>
+    </div>
+  </div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Avaliação da agência sobre o atendimento atual</span></div>
+</section>
+
+<!-- 4 COMO É A CONVERSA -->
+<section class="slide alt">
+  <div class="eyebrow">Atendente de WhatsApp com IA<span class="new">novo</span></div>
+  <h2>Uma conversa de verdade, que <em>vai até o fim</em></h2>
+  <div class="g2 mt" style="grid-template-columns:1fr 1.05fr;align-items:start">
+    <div class="chat">
+      <div class="b out">Boa tarde. Tô com um dente quebrado e tenho vergonha de sorrir, queria ver implante</div>
+      <div class="b in">Boa tarde! Sinto muito, a gente vê muito esse caso e tem solução, viu? O primeiro passo é a avaliação com a dentista, que aqui é gratuita. Prefere manhã ou tarde?</div>
+      <div class="b out">Tarde. E quanto fica o implante?</div>
+      <div class="b in">O valor depende do caso, por isso a dentista já passa o orçamento na avaliação, sem compromisso. Tenho segunda às 15h ou às 17h. Qual fica melhor?</div>
+      <div class="b out">15h. Maria das Graças Souza</div>
+      <div class="act">✓ Consulta marcada na agenda da clínica</div>
+      <div class="b in">Prontinho, Maria! Segunda às 15h, Quadra 7/9, Comércio Local 13. Traga um documento com foto. Te lembro na véspera.</div>
+    </div>
+    <div style="display:grid;gap:10px">
+      <div class="card"><h3>O que ele faz</h3>
+        <ul class="plus">
+          <li>Responde na hora, 24 horas por dia, com o jeito da recepção</li>
+          <li>Tira dúvidas: serviços, endereço, horário, Saúde Day, avaliação gratuita</li>
+          <li>Mostra só horários livres de verdade e marca na agenda</li>
+          <li>Manda lembrete na véspera: 1 confirma, 2 remarca</li>
+          <li>Chama de volta quem não fechou orçamento e quem precisa de retorno</li>
+        </ul></div>
+      <div class="card"><h3>O que fica com a recepção</h3>
+        <ul class="plus">
+          <li>Urgência: orienta ligar 192 e avisa a recepção na hora</li>
+          <li>Convênio, reclamação e valores de tratamento</li>
+          <li>Quando o paciente pede para falar com uma pessoa, o robô pausa</li>
+        </ul></div>
+    </div>
+  </div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Exemplo do protótipo que já funciona em simulação</span></div>
+</section>
+
+<!-- 5 COMO FUNCIONA / CUSTO -->
+<section class="slide">
+  <div class="eyebrow">Como montamos</div>
+  <h2>WhatsApp oficial, estrutura própria e <em>custo baixo todo mês</em></h2>
+  <div class="steps mt">
+    <div class="card"><span class="num">1</span><b>WhatsApp oficial</b>Conectado pela API oficial da Meta. Sem risco de bloqueio do número.</div>
+    <div class="card"><span class="num">2</span><b>Regras da clínica</b>Serviços, horários, tom de voz e o que nunca dizer, escritos com vocês.</div>
+    <div class="card"><span class="num">3</span><b>Agenda ligada</b>O robô marca e a recepção vê no Google Agenda, no celular ou no computador.</div>
+    <div class="card"><span class="num">4</span><b>Registro de tudo</b>Cada contato fica salvo: novo, agendado, faltou, orçamento aberto, retorno.</div>
+    <div class="card"><span class="num">5</span><b>Ajuste mensal</b>Lemos as conversas e melhoramos as respostas que não converteram.</div>
+  </div>
+  <div class="g2 mt">
+    <div class="card"><h3>Por que não uma plataforma pronta</h3>
+      <p>Ferramentas de robô de WhatsApp cobram de R$ 150 a R$ 600 por mês só pela plataforma, fora a inteligência artificial. Construímos a estrutura com código próprio, e a clínica paga só o uso.</p></div>
+    <div class="card"><h3>Já incluso na mensalidade</h3>
+      <p>Servidor, inteligência artificial, mensagens de lembrete (até 1.000 por mês), manutenção e ajustes. As respostas às mensagens dos pacientes não têm custo de WhatsApp.</p></div>
+  </div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Preços de mercado consultados em outubro de 2026</span></div>
+</section>
+
+<!-- 6 CNPJ PRÉ-REQUISITO -->
+<section class="slide alt">
+  <div class="eyebrow">Documentação da clínica</div>
+  <h2>O CNPJ precisa estar <em>regular</em> para o WhatsApp oficial e o Google</h2>
+  <div class="g2 mt">
+    <div class="card">
+      <div class="row"><span>Empresa</span><span>Clínica J Lima Ltda</span></div>
+      <div class="row"><span>CNPJ</span><span>29.598.840/0001-80</span></div>
+      <div class="row"><span>Situação</span><span style="color:var(--red)">Inapta desde 27/05/2026</span></div>
+      <div class="row"><span>Motivo informado</span><span>Omissão de declarações</span></div>
+      <div class="row" style="border:0"><span>Endereço no cadastro</span><span>Quadra Central, Lote I</span></div>
+    </div>
+    <div style="display:grid;gap:10px">
+      <div class="card"><h3>Por que importa agora</h3><p>A Meta pede a verificação da empresa para liberar o WhatsApp oficial com lembretes. Com o CNPJ inapto, a verificação pode ser negada. O Google também pode pedir documento para confirmar o perfil.</p></div>
+      <div class="card"><h3>O que fazemos</h3><p>Orientamos o passo a passo com o contador e começamos pelo que não depende disso: regras do atendente, agenda e site. A ligação com o WhatsApp entra assim que a Receita atualizar.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Consulta pública à Receita Federal em 15/10/2026. Confirmar com o contador.</span></div>
+</section>
+
+<!-- 7 SITE E PRESENÇA -->
+<section class="slide">
+  <div class="eyebrow">O que entregamos, explicado</div>
+  <h2>Ser encontrado: site, Google e redes</h2>
+  <div class="g2 mt">
+    <div class="card"><h3><span class="num">1</span>Site novo no ar e mantido</h3>
+      <p>Site publicado no endereço da clínica, com letra grande, botões fáceis e WhatsApp direto. A prévia já está pronta.</p>
+      <ul class="plus"><li>Domínio, hospedagem e cadeado configurados</li><li>Troca de fotos, horários, avisos e data do Saúde Day</li><li>Até 4 pedidos de alteração por mês</li></ul>
+      <p class="gain">Ganho: um endereço oficial que leva direto ao atendente.</p></div>
+    <div class="card"><h3><span class="num">2</span>Presença no Google e redes</h3>
+      <p>A clínica certa e ativa onde o paciente procura: Google, Instagram, Facebook e WhatsApp, com o mesmo endereço, telefone e horário.</p>
+      <ul class="plus"><li>Google Meu Negócio completo, com publicação semanal</li><li>Categorias certas: dentista, implante, clínica médica</li><li>Resposta a todas as avaliações</li><li>Site antigo tirado do ar ou corrigido</li></ul>
+      <p class="gain">Ganho: aparecer no mapa quando procurarem dentista em Sobradinho.</p></div>
+  </div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Itens 1 e 2: plano mensal Presença</span></div>
+</section>
+
+<!-- 8 VÍDEO + SAÚDE DAY -->
+<section class="slide alt">
+  <div class="eyebrow">Conteúdo, vídeo e Saúde Day</div>
+  <h2>Vocês gravam com o celular. Nós <em>transformamos em vídeo</em> que leva ao WhatsApp</h2>
+  <div class="g4 mt">
+    <div class="card"><span class="num">1</span><b style="display:block;font-family:Poppins;margin:6px 0 3px">Roteiro pronto</b>Toda semana enviamos o que gravar, com falas e ângulos.</div>
+    <div class="card"><span class="num">2</span><b style="display:block;font-family:Poppins;margin:6px 0 3px">A equipe grava</b>Dentista, médico ou paciente, no celular, em poucos minutos.</div>
+    <div class="card"><span class="num">3</span><b style="display:block;font-family:Poppins;margin:6px 0 3px">Nós editamos</b>Cortes, legenda grande, capa, logo e chamada para o WhatsApp.</div>
+    <div class="card"><span class="num">4</span><b style="display:block;font-family:Poppins;margin:6px 0 3px">Vai para o ar</b>Reels, Stories e Google, no calendário combinado.</div>
+  </div>
+  <div class="card mt"><h3>Saúde Day com o atendente</h3>
+    <ul class="plus"><li>Inscrição pelo WhatsApp, feita pelo próprio atendente</li><li>No dia seguinte, mensagem de agradecimento com convite para a avaliação odontológica gratuita</li><li>Vídeo resumo com depoimentos de quem foi</li></ul></div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Não fazemos gravação presencial · Saúde Day: 2º sábado do mês, 9h às 13h</span></div>
+</section>
+
+<!-- 9 PLANO 90 DIAS -->
+<section class="slide">
+  <div class="eyebrow">Plano de 90 dias</div>
+  <h2>O que acontece em cada mês</h2>
+  <div class="g3 mt">
+    <div class="card month"><span class="m">Mês 1</span><b>Arrumar a casa</b>
+      <ul class="plus"><li>Site novo no ar com domínio próprio</li><li>Google Meu Negócio completo</li><li>Endereço igual em todos os lugares</li><li>Orientação para regularizar o CNPJ</li><li>Regras do atendente e agenda montadas com a recepção</li></ul></div>
+    <div class="card month"><span class="m">Mês 2</span><b>Atendente no ar</b>
+      <ul class="plus"><li>WhatsApp oficial conectado</li><li>Duas semanas acompanhando cada conversa de perto</li><li>Lembretes de véspera ligados</li><li>Vídeos editados toda semana</li><li>Saúde Day com inscrição pelo atendente</li></ul></div>
+    <div class="card month"><span class="m">Mês 3</span><b>Medir e ajustar</b>
+      <ul class="plus"><li>Painel do mês: conversas, consultas marcadas, faltas e retornos</li><li>Respostas ajustadas pelo que mais converteu</li><li>Relatório do Google e Instagram</li><li>Plano dos próximos 3 meses</li></ul></div>
+  </div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>A data do atendente no ar depende da verificação da empresa na Meta</span></div>
+</section>
+
+<!-- 10 INVESTIMENTO -->
+<section class="slide alt">
+  <div class="eyebrow">Investimento</div>
+  <h2>Uma implantação no início e um plano mensal</h2>
+  <div style="display:grid;grid-template-columns:1.35fr 1fr 1fr 1fr;gap:12px;margin-top:20px;align-items:start">
+    <div class="card">
+      <div class="eyebrow" style="color:var(--muted)">Implantação · paga uma vez</div>
+      <div class="row"><span>Site novo no ar</span><span>R$ 997</span></div>
+      <div class="row"><span>Atendente WhatsApp com IA</span><span>R$ 1.497</span></div>
+      <div class="row"><span>Organização do atendimento</span><span>R$ 497</span></div>
+      <div class="row" style="border:0"><span>Os três juntos</span><span><s class="small">R$ 2.991</s> <b style="color:var(--red);font-family:Poppins;font-size:14px">R$ 2.490</b></span></div>
+      <p class="small" style="margin-top:6px">Pode ser dividido em 3 vezes. Domínio .com.br (cerca de R$ 40 por ano) no nome da clínica.</p>
+    </div>
+    <div class="card"><b style="font-family:Poppins;font-size:12px">Presença</b><div class="price">R$ 497 <small>/ mês</small></div>
+      <ul class="plus"><li>Site mantido</li><li>Google Meu Negócio ativo</li><li>Respostas às avaliações</li><li>Relatório do mês</li></ul></div>
+    <div class="card reco"><b style="font-family:Poppins;font-size:12px">Presença + Atendente</b><div class="price">R$ 797 <small>/ mês</small></div>
+      <ul class="plus"><li>Tudo do Presença</li><li>Atendente 24 h no WhatsApp</li><li>Agenda, lembretes e retornos</li><li>Ajuste mensal das respostas</li></ul></div>
+    <div class="card"><b style="font-family:Poppins;font-size:12px">Completo</b><div class="price">R$ 1.097 <small>/ mês</small></div>
+      <ul class="plus"><li>Tudo do Presença + Atendente</li><li>Roteiros toda semana</li><li>Até 8 vídeos editados por mês</li><li>Saúde Day com convite e vídeo</li></ul></div>
+  </div>
+  <p class="small" style="margin-top:12px">Contrato mínimo de 6 meses. Atendente incluso: servidor, inteligência artificial e até 1.000 lembretes por mês. Vídeo extra além dos 8: R$ 70 cada. A clínica grava e nós editamos.</p>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Valores válidos por 15 dias</span></div>
+</section>
+
+<!-- 11 PRÓXIMO PASSO -->
+<section class="slide">
+  <div class="eyebrow">Próximo passo</div>
+  <h2 style="font-size:30px;max-width:760px;margin-top:40px">Sobradinho já confia na MedicMais. Agora o WhatsApp <em>atende e marca</em> por ela.</h2>
+  <p class="lead" style="margin-top:14px">Aprovando, começamos pelo site e pelas regras do atendente na mesma semana. O protótipo do atendente já funciona e podemos mostrar ao vivo.</p>
+  <div class="g3" style="margin-top:34px">
+    <div class="card"><div class="eyebrow">Já está pronto</div><b style="font-family:Poppins;font-size:13px">Site novo e protótipo do atendente</b></div>
+    <div class="card"><div class="eyebrow">Primeiro mês</div><b style="font-family:Poppins;font-size:13px">Google arrumado, CNPJ encaminhado, agenda montada</b></div>
+    <div class="card"><div class="eyebrow">Segundo mês</div><b style="font-family:Poppins;font-size:13px">Atendente no ar, 24 horas por dia</b></div>
+  </div>
+  <div class="foot"><span>MedicMais Sobradinho · Proposta</span><span>Outubro de 2026</span></div>
+</section>
+
+</body>
+</html>

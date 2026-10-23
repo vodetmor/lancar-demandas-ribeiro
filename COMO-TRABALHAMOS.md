@@ -66,3 +66,26 @@ Antes de entregar qualquer tela: abrir no celular (390 px), fazer o fluxo inteir
 - Toda mudança no bot precisa de trava anti-loop e teste antes de ir ao ar (20/10 o robô da Central entrou em loop repetindo "Oi" e foi pausado).
 - Produção de cliente deve ir para API oficial no número e conta do próprio cliente quando possível. A conta Meta do Ribeiro está restrita.
 - Stack que já funciona: n8n + WAHA (ou Evolution API) + IA barata (z.ai/GLM) + painel na Vercel + banco Postgres. Detalhe em `memoria/atendente-whatsapp-demo.md`.
+- Checklist completo do que o próximo robô já tem que nascer com: `conhecimento/whatsapp/APRENDIZADOS-ROBO-WHATSAPP.md` (esperar mensagens picadas, ignorar duplicadas, limite de rajada, nunca falar com outro robô, preço calculado pelo sistema, mídia só depois de decidir responder, 8 passos por resposta, uma mensagem curta por vez, confirmar uma vez só).
+- Cada cliente com WAHA e n8n próprios. Testar numa cópia que não envia nada.
+
+## 10. Produção (o que já quebrou)
+- Nunca subir `SEED_VERSION` nem recriar a demo de um cliente em produção: o reseed de 20/10 apagou conversas e pedidos. Mudança de cardápio vai pelo painel ou pela API.
+- Banco na nuvem cai às vezes (ECONNRESET): toda gravação precisa de nova tentativa.
+- O modo automático do PC só aceita autorização para gravar em produção escrita pelo Ribeiro no próprio thread.
+
+## 11. Vídeo
+- Método do repositório do Vítor (`conhecimento/video/CONHECIMENTO-VIDEO.md`). Projeto modelo completo: `conhecimento/video/projeto-luiza-rabelo/` (Remotion + three, 16 cenas sincronizadas com a voz palavra por palavra).
+- Voz: Ribeiro gera no ElevenLabs (voz Ana Dias, Multilingual v2) a partir do roteiro; Claude faz o resto.
+- Pegadinhas: o mp4 do Remotion já vem com áudio mudo, então ao juntar a trilha usar `-map 0:v -map 1:a` (a primeira entrega saiu sem som); textura do three carregada depois do primeiro quadro fica preta se o canvas não for invalidado; imagem acima de 8192 px é reduzida, cortar prints longos; alinhamento só por silêncio erra pausas, conferir à mão (`pausas-manual.txt`).
+- Celular nos vídeos: componente iPhone 3D próprio (sem logo da Apple), em `conhecimento/video/componentes/iphone-3d/`.
+
+## 12. Limitações da nuvem e como contornar
+- A nuvem não abre `*.vercel.app`, Instagram, Google Maps, Pexels, HuggingFace (Whisper), CDN da Higgsfield. Usar o PC pelo Remote Control.
+- Transcrever áudio do Ribeiro: copiar para a pasta do projeto, enviar ao PC e rodar faster-whisper lá (`C:\dev\_whisper`).
+- No PC, a pasta `Maquina de Editar\Backup-GitHub` é só espelho: nunca dar push dela.
+
+## 13. Comercial
+- Toda proposta nova parte da tabela única (`conhecimento/comercial/PRECOS-E-CUSTOS.md`). Pacote = 20% de desconto.
+- Proposta é HTML renderizado em PDF 960×540 (Chromium). Modelos em `clientes/*/propostas/`.
+- Contrato de atendente: modelo em `clientes/medicmais/contrato/` (revisão de advogado recomendada).

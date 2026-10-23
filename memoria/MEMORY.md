@@ -20,15 +20,20 @@
 ## Agência
 - Faz tudo menos gravar vídeo: sites, landing pages, apps/SaaS, automação e robô de WhatsApp, CRM, marketing, edição de vídeo, roteiro, flyer, design.
 - Vítor = criador do repo de edição de vídeo (github.com/vodetmor/edicao-de-video-claude-vodetmor); Ribeiro = dono deste projeto.
-- Clientes quentes: MedicMais Sobradinho (site medicmais-sobradinho-site.vercel.app, repo rruandev/medic-mais-; proposta v2 + atendente WhatsApp em /mnt/project-files/clientes/medicmais/, aguarda aprovação de valores; só ajustar o site quando a clínica fechar), Luiza Rabelo DF (proposta + site em /mnt/project-files/clientes/luiza-rabelo/, site em luiza-rabelo-df.vercel.app), Central do Espeto (ver abaixo). Frio: Ótica Hora Certa (pesquisa em clientes/otica-hora-certa/).
+- Clientes quentes: MedicMais Sobradinho (site medicmais-sobradinho-site.vercel.app, repo rruandev/medic-mais-; proposta v2 + atendente WhatsApp em /mnt/project-files/clientes/medicmais/, aguarda aprovação de valores; só ajustar o site quando a clínica fechar), Luiza Rabelo DF (proposta + site em /mnt/project-files/clientes/luiza-rabelo/, site em luiza-rabelo-df.vercel.app; vídeo institucional 3D PRONTO em clientes/luiza-rabelo/video-institucional/luiza-rabelo-institucional.mp4 (21/10), ver video-luiza-rabelo.md), Central do Espeto (ver abaixo). Frio: Ótica Hora Certa (pesquisa em clientes/otica-hora-certa/).
+- Contrato do atendente MedicMais (minuta 22/10): clientes/medicmais/contrato/ (docx + PDF), aguarda dados e valores do Ribeiro.
+- Pacote completo MedicMais sugerido (21/10, aguarda aprovação): R$ 3.190 implantação + R$ 1.797/mês (12 meses), verba Google à parte (~R$ 30/dia). Custo agência ~R$ 160-230/mês + 31-37 h. Disparo: utilidade ~R$ 0,04 no oficial; marketing ~R$ 0,30-0,35 (R$ 0,04 só via não oficial, risco de bloqueio).
+- Modelo de cobrança desejado (21/10): implantação à vista + mensalidade começando ~2 meses depois.
 - Docs: /mnt/project-files/arquitetura/ (PROPOSTA-ARQUITETURA, CONHECIMENTO-VIDEO, PESQUISA-LANDING-PAGES).
+- Preços: tabela única em /mnt/project-files/interno/PRECOS-E-CUSTOS.md (21/10; ver tabela-precos-agencia.md). Propostas v3 MedicMais e Luiza em proposta-v3/.
 - Painel "Clientes do Ribeiro" (artefato claude.ai/artifact/5Linm5nE8UiFeRqNtfs8pt): clientes, cobranças, financeiro (ROI/ROAS), tarefas kanban.
 - Instagram/Maps bloqueiam a nuvem; usar prints, fontes públicas ou o PC.
 
 ## Central do Espeto (EM PRODUÇÃO desde 20/10/2026)
+- Fechado em 20/10 por R$ 2.500 à vista + 6 meses de manutenção inclusa (Ribeiro acha que saiu barato).
 - Cardápio real no app https://brasa-nobre.vercel.app (repo vodetmor/brasa-nobre, C:\dev\cardapio-saas). Mesa 1: /m/fv8STBGg (links NFC fixos). Painel /r/central-do-espeto/painel, cozinha /cozinha, atendimento /atendimento, QR /qrcodes. Impressora Elgin i8 80 mm no balcão via Chrome --kiosk-printing.
 - Atendente WhatsApp: n8n + WAHA separados da MedicMais, no número real do dono (61) 99611-5754. PC do Ribeiro é o servidor temporário. NUNCA desconectar o número nem derrubar WAHA/n8n sem ele pedir. Mudanças no bot precisam de trava anti-loop e teste (20/10 o robô entrou em loop repetindo "Oi" e foi pausado). Simplificar visual do painel sem tirar funções.
-- Pendente: preço da feijoada de sábado; horário/entrega/taxa/Pix do robô; fotos reais de Central/Sertanejo/Fit.
+- Pendente: horário/entrega/taxa/Pix do robô; fotos reais de Central/Sertanejo/Fit. Feijoada sábado R$ 25 (autorizada 21/10).
 
 ## PC do usuário
 - Device VITOR-SAMSUNG via Remote Control. Pastas: C:\dev\cardapio-saas (padrão), landing-pages, Maquina de Editar, image-automation, iptvix, VSLplay; n8n em C:\dev\n8n-atendente. twitter-cli com credenciais no PC.

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Proposta Luiza Rabelo · v3</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  @page { size: 960px 540px; margin: 0; }
+  :root { --creme:#F7F2EC; --nude2:#F3E6DE; --rose:#B98B6E; --rosee:#8E6650; --palha:#D9C2A0; --texto:#1E1A17; --t2:#5E544D; --linha:#E3D5C9; --branco:#FFFDFA; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 300 13px/1.5 'Jost', sans-serif; color: var(--texto); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .slide { width: 960px; height: 540px; position: relative; overflow: hidden; background: var(--creme); padding: 44px 56px 0; page-break-after: always; }
+  h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; margin: 0; line-height: 1.05; letter-spacing: -.01em; }
+  h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; color: var(--rosee); }
+  h2 { font-size: 36px; margin-bottom: 20px; max-width: 780px; }
+  p { margin: 0 0 .8em; }
+  .sobre { font: 400 10px/1 'Jost'; letter-spacing: .3em; text-transform: uppercase; color: var(--rosee); margin-bottom: 12px; }
+  .logo { font: 400 18px/1 'Cinzel', serif; letter-spacing: .08em; text-transform: uppercase; }
+  .pe { position: absolute; left: 56px; right: 56px; bottom: 18px; display: flex; justify-content: space-between; font-size: 9px; color: var(--t2); letter-spacing: .04em; }
+  .escuro { background: var(--texto); color: var(--creme); }
+  .escuro .sobre { color: var(--palha); } .escuro h1 em, .escuro h2 em { color: var(--palha); } .escuro .pe { color: #A99C91; }
+  .nude { background: var(--nude2); }
+  .card { background: var(--branco); border: 1px solid var(--linha); padding: 15px 17px; }
+  .escuro .card { background: #2A2420; border-color: #3E352F; color: #E9E0D7; }
+  .ck { list-style: none; padding: 0; margin: 0; }
+  .ck li { position: relative; padding-left: 20px; margin-bottom: 7px; }
+  .ck li::before { content: ''; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; border: 1px solid var(--rose); transform: rotate(45deg); }
+  .ck li strong { font-weight: 500; }
+  .num { font: 500 34px/1 'Cormorant Garamond'; color: var(--rosee); }
+  .escuro .num { color: var(--palha); }
+  .rotulo { font-weight: 500; font-size: 12.5px; margin: 6px 0 3px; }
+  .peq { font-size: 11px; color: var(--t2); }
+  .escuro .peq { color: #B8ACA2; }
+  .linha span:last-child { font-family: 'Jost', sans-serif; }
+  .foto { background-size: cover; background-position: center; }
+  .g3 { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+  .g4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+  .linha { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px solid var(--linha); font-size: 12.5px; }
+  .linha span:last-child { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 400; }
+  .preco { font: 400 25px/1 'Jost', sans-serif; color: var(--rosee); margin: 6px 0 8px; }
+  .preco small { font: 400 11px 'Jost'; color: var(--t2); }
+  .cena { border-top: 1px solid var(--rose); padding-top: 9px; }
+  .cena .t { font: 400 9.5px/1 'Jost'; letter-spacing: .2em; color: var(--palha); text-transform: uppercase; }
+  .cena b { display: block; font: 500 19px/1.1 'Cormorant Garamond'; margin: 6px 0 4px; color: var(--creme); }
+</style>
+</head>
+<body>
+
+<!-- 1 CAPA -->
+<section class="slide" style="padding:0;display:grid;grid-template-columns:1.1fr .9fr;">
+  <div style="padding:52px 56px;display:flex;flex-direction:column;">
+    <span class="logo">Luiza Rabelo</span>
+    <div style="margin:auto 0;">
+      <p class="sobre">Proposta · loja online, Google e vídeo</p>
+      <h1 style="font-size:50px;margin-bottom:18px;">36 anos em Sobradinho. <em>Pronta para</em> vender para o Brasil.</h1>
+      <p style="color:var(--t2);font-size:14px;max-width:40ch;">Como vamos fazer cada parte: a loja online, o Google bem cuidado, os anúncios e um vídeo de apresentação da marca.</p>
+    </div>
+    <p class="peq" style="margin:0;">Proposta preparada para a Luiza Rabelo, Sobradinho-DF · versão 3 · outubro de 2026</p>
+  </div>
+  <div class="foto" style="background-image:url(img/novo-espaco.jpg);background-position:center 70%;"></div>
+</section>
+
+<!-- 2 ONDE ESTAMOS -->
+<section class="slide nude">
+  <p class="sobre">Onde a loja está hoje</p>
+  <h2>O Instagram encanta. <em>Mas quem procura</em> no Google não encontra a loja.</h2>
+  <div class="g4">
+    <div class="card"><div class="num">Forte</div><p class="rotulo">Instagram</p><p class="peq">Fotos bonitas, coleções e a loja reinaugurada.</p></div>
+    <div class="card"><div class="num">Sem site</div><p class="rotulo">Na internet</p><p class="peq">Não há onde a cliente veja as peças e compre.</p></div>
+    <div class="card"><div class="num">4,7</div><p class="rotulo">Nota no Google</p><p class="peq">Ótima nota, mas só 7 avaliações em 36 anos de clientes.</p></div>
+    <div class="card"><div class="num">Sem dono</div><p class="rotulo">Ficha do Google</p><p class="peq">Não reivindicada, com endereço e telefone diferentes do Instagram.</p></div>
+  </div>
+  <p style="margin-top:22px;max-width:72ch;">Quem busca "loja de roupa feminina em Sobradinho" ou "semijoias" decide pelo Google: nota, fotos, horário e site. E quem chega pelo Instagram precisa de um lugar para ver tudo e pedir.</p>
+  <div class="pe"><span>Luiza Rabelo · Proposta</span><span>Dados do Google e do Instagram em outubro de 2026</span></div>
+</section>
+
+<!-- 3 LOJA ONLINE -->
+<section class="slide" style="display:grid;grid-template-columns:1fr 270px;gap:40px;">
+  <div>
+    <p class="sobre">1 · Loja online · como fazemos</p>
+    <h2 style="font-size:36px;">A loja online <em>já existe.</em> Agora ela ganha o nome da loja.</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div class="card"><p class="rotulo" style="margin-top:0">Implantação</p>
+        <ul class="ck peq"><li>Domínio próprio, como luizarabelo.com.br</li><li>Peças, preços e tamanhos da loja</li><li>Fotos das coleções tratadas</li><li>Sacola que fecha o pedido no WhatsApp</li><li>Pix ou link de pagamento e frete por CEP</li><li>Ligação com Instagram e Google</li></ul></div>
+      <div class="card"><p class="rotulo" style="margin-top:0">Todo mês</p>
+        <ul class="ck peq"><li>Hospedagem e domínio cuidados por nós</li><li>Novidades e coleções no ar</li><li>Até 4 pedidos de alteração</li><li>Velocidade conferida no celular</li><li>Relatório: visitas e pedidos</li></ul></div>
+    </div>
+    <p class="peq" style="margin-top:12px;max-width:62ch;">A loja fica ao lado dos Correios: a peça pedida pelo site é postada no mesmo dia. Semijoias são leves e baratas de enviar, ideais para vender fora do DF.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+    <div class="card" style="padding:16px;"><img src="img/qr-site.svg" style="width:170px;height:170px;display:block;"></div>
+    <p class="sobre" style="margin:14px 0 6px;">Aponte a câmera</p>
+    <p style="font-weight:500;font-size:14px;margin:0;">luiza-rabelo-df.vercel.app</p>
+    <p class="peq" style="margin-top:6px;">Endereço provisório da demonstração.</p>
+  </div>
+  <div class="pe"><span>Luiza Rabelo · Proposta</span><span>Nomes e preços da demonstração são provisórios</span></div>
+</section>
+
+<!-- 4 GOOGLE + PLACA -->
+<section class="slide nude" style="display:grid;grid-template-columns:1fr 300px;gap:36px;">
+  <div>
+    <p class="sobre">2 · Google Meu Negócio · como fazemos</p>
+    <h2 style="font-size:34px;">Ser a primeira loja <em>que aparece</em> no mapa de Sobradinho</h2>
+    <ul class="ck">
+      <li><strong>Reivindicar a ficha</strong> no nome da loja, com o Google confirmando por código ou vídeo</li>
+      <li><strong>Corrigir</strong> endereço, telefone, horário e categoria (moda feminina e semijoias)</li>
+      <li><strong>Fotos novas</strong> da fachada, do salão e das coleções</li>
+      <li><strong>Site e WhatsApp</strong> na ficha</li>
+      <li><strong>Cadastros antigos</strong> com o nome Engrenagem corrigidos</li>
+      <li><strong>Todo mês:</strong> publicação semanal e resposta a todas as avaliações</li>
+    </ul>
+    <div class="card" style="margin-top:12px;">
+      <p class="rotulo" style="margin-top:0;">Placa de avaliação no balcão</p>
+      <p class="peq" style="margin:0;">Acrílico com aproximação (NFC) e QR Code. A cliente encosta o celular e cai direto na tela de avaliação do Google.</p>
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center;">
+    <img src="img/placa-referencia.png" style="width:300px;height:300px;object-fit:cover;border:1px solid var(--linha);">
+    <p class="peq" style="margin-top:8px;">Modelo da placa que fica no balcão.</p>
+  </div>
+  <div class="pe"><span>Luiza Rabelo · Proposta</span><span>Mais avaliações = mais destaque no Google</span></div>
+</section>
+
+<!-- 5 GOOGLE ADS -->
+<section class="slide">
+  <p class="sobre">3 · Anúncios no Google · como fazemos</p>
+  <h2>Anúncios para quem <em>já está procurando</em> o que a loja vende</h2>
+  <div class="g3">
+    <div class="card"><p class="sobre" style="margin-bottom:6px;">Perto da loja</p><h3 style="font-size:22px;margin-bottom:10px;">Sobradinho e DF</h3>
+      <ul class="ck peq"><li>"Loja de roupa feminina Sobradinho"</li><li>Anúncio no mapa com rota até a loja</li><li>Botão de ligar e chamar no WhatsApp</li></ul></div>
+    <div class="card"><p class="sobre" style="margin-bottom:6px;">Brasil</p><h3 style="font-size:22px;margin-bottom:10px;">Semijoias e coleções</h3>
+      <ul class="ck peq"><li>Buscas por colares, brincos e semijoias</li><li>Anúncio leva direto à peça na loja online</li><li>Começa pequeno e cresce no que vender</li></ul></div>
+    <div class="card"><p class="sobre" style="margin-bottom:6px;">Todo mês</p><h3 style="font-size:22px;margin-bottom:10px;">Medir e ajustar</h3>
+      <ul class="ck peq"><li>Quanto foi investido e quantos pedidos vieram</li><li>Quais peças e buscas trouxeram venda</li><li>Corte do que não funciona</li></ul></div>
+  </div>
+  <div class="card" style="margin-top:16px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;">
+    <div class="num">R$ 30<span style="font-size:18px">/dia</span></div>
+    <p class="peq" style="margin:0;">Verba sugerida para começar, cerca de R$ 900 por mês, paga direto ao Google no cartão da loja. Nós montamos, cuidamos e ajustamos as campanhas. O vídeo de apresentação vira anúncio também.</p>
+  </div>
+  <div class="pe"><span>Luiza Rabelo · Proposta</span><span>A verba pode subir ou descer a qualquer momento</span></div>
+</section>
+
+<!-- 6 VÍDEO: O QUE É -->
+<section class="slide escuro" style="padding:0;display:grid;grid-template-columns:.8fr 1.2fr;">
+  <div class="foto" style="background-image:url(img/look-paete.jpg);"></div>
+  <div style="padding:42px 50px;">
+    <p class="sobre">4 · Vídeo de apresentação da marca</p>
+    <h2 style="font-size:34px;">Um filme curto, <em>com cara de marca grande</em>, feito com as peças da loja</h2>
+    <p style="color:#CFC4BA;max-width:50ch;font-size:12.5px;">Animação em 3D e tipografia em movimento, no ritmo das campanhas de moda e joalheria. Mostra a história, as peças e a loja online, e termina no convite para visitar.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;margin-top:16px;">
+      <div class="cena"><span class="t">Abertura</span><b>O nome se forma</b><p class="peq" style="margin:0">O logo Luiza Rabelo surge letra a letra sobre o creme da marca.</p></div>
+      <div class="cena"><span class="t">Semijoias em 3D</span><b>A peça gira na luz</b><p class="peq" style="margin:0">Colar e brinco modelados em 3D, com brilho de metal de verdade.</p></div>
+      <div class="cena"><span class="t">Coleções</span><b>Os looks da loja</b><p class="peq" style="margin:0">Fotos reais em sequência editorial, no ritmo da música.</p></div>
+      <div class="cena"><span class="t">Fechamento</span><b>36 anos e a loja online</b><p class="peq" style="margin:0">Fachada nova, celular com a loja aberta, endereço e @.</p></div>
+    </div>
+  </div>
+  <div class="pe" style="left:auto;width:480px;"><span>Luiza Rabelo · Proposta</span><span>Cenas de referência. O roteiro final é aprovado com vocês.</span></div>
+</section>
+
+<!-- 7 VÍDEO: COMO FAZEMOS -->
+<section class="slide nude">
+  <p class="sobre">4 · Vídeo · como fazemos</p>
+  <h2>Vocês aprovam <em>cada etapa</em> antes da próxima</h2>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px;">
+    <div class="card"><div class="num">1</div><p class="rotulo">Roteiro</p><p class="peq" style="margin:0">Texto e música definidos com a Luiza, em uma página.</p></div>
+    <div class="card"><div class="num">2</div><p class="rotulo">Quadros-chave</p><p class="peq" style="margin:0">Uma imagem de cada cena para aprovar antes de animar.</p></div>
+    <div class="card"><div class="num">3</div><p class="rotulo">Animação</p><p class="peq" style="margin:0">Peças em 3D, fotos da loja e letras em movimento.</p></div>
+    <div class="card"><div class="num">4</div><p class="rotulo">Som</p><p class="peq" style="margin:0">Trilha licenciada e, se quiser, voz de locução.</p></div>
+    <div class="card"><div class="num">5</div><p class="rotulo">Revisão</p><p class="peq" style="margin:0">Uma rodada de ajustes incluída, sem refazer do zero.</p></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px;">
+    <div class="card"><p class="rotulo" style="margin-top:0">O que vocês recebem</p>
+      <ul class="ck peq"><li>Vídeo principal de 30 a 45 segundos</li><li>Versão em pé para Reels e Stories, e deitada para site e YouTube</li><li>Dois cortes de 15 segundos para anúncio</li><li>Capa para o Instagram</li></ul></div>
+    <div class="card"><p class="rotulo" style="margin-top:0">Do que precisamos</p>
+      <ul class="ck peq"><li>Logo e fotos das coleções (podemos usar as do Instagram)</li><li>Fotos ou peças de semijoia para modelar em 3D</li><li>Uma frase da Luiza sobre os 36 anos</li><li>Nada de gravação: tudo é animação</li></ul></div>
+  </div>
+  <div class="pe"><span>Luiza Rabelo · Proposta</span><span>Prazo: cerca de 10 dias úteis após o roteiro aprovado</span></div>
+</section>
+
+<!-- 8 CRONOGRAMA -->
+<section class="slide">
+  <p class="sobre">Cronograma</p>
+  <h2>Em quatro semanas, <em>tudo no ar</em></h2>
+  <div class="g4" style="margin-top:6px;">
+    <div style="border-top:1px solid var(--rose);padding-top:10px;"><p class="sobre" style="margin-bottom:6px;">Semana 1</p><p class="rotulo" style="margin-top:0">Loja no domínio</p><p class="peq">Peças, preços e tamanhos da loja. Ficha do Google reivindicada. Roteiro do vídeo aprovado.</p></div>
+    <div style="border-top:1px solid var(--rose);padding-top:10px;"><p class="sobre" style="margin-bottom:6px;">Semana 2</p><p class="rotulo" style="margin-top:0">Google arrumado</p><p class="peq">Fotos, horário, categorias e cadastros antigos. Quadros-chave do vídeo aprovados.</p></div>
+    <div style="border-top:1px solid var(--rose);padding-top:10px;"><p class="sobre" style="margin-bottom:6px;">Semana 3</p><p class="rotulo" style="margin-top:0">Placa e vídeo</p><p class="peq">Placa no balcão. Vídeo entregue nos formatos de Instagram, site e anúncio.</p></div>
+    <div style="border-top:1px solid var(--rose);padding-top:10px;"><p class="sobre" style="margin-bottom:6px;">Semana 4</p><p class="rotulo" style="margin-top:0">Anúncios no ar</p><p class="peq">Campanhas em Sobradinho e no Brasil, com o vídeo como anúncio.</p></div>
+  </div>
+  <div class="card" style="margin-top:24px;"><p class="rotulo" style="margin-top:0">Depois do primeiro mês</p><p class="peq" style="margin:0">Relatório mensal com visitas, pedidos, avaliações novas e resultado dos anúncios. Ajustes no que não vendeu e novidades da loja sempre no ar.</p></div>
+  <div class="pe"><span>Luiza Rabelo · Proposta</span><span>Datas contadas a partir da aprovação</span></div>
+</section>
+
+<!-- 9 INVESTIMENTO -->
+<section class="slide nude preco">
+  <p class="sobre">Investimento</p>
+  <h2>Uma implantação no início e <em>um plano mensal</em></h2>
+  <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:14px;align-items:start;">
+    <div class="card">
+      <p class="sobre" style="color:var(--t2);margin-bottom:6px;">Implantação · paga uma vez</p>
+      <div class="linha"><span>Loja online no domínio da loja</span><span>R$ 1.497</span></div>
+      <div class="linha"><span>Vídeo de apresentação em 3D</span><span>R$ 1.797</span></div>
+      <div class="linha"><span>Google Meu Negócio e cadastros</span><span>R$ 497</span></div>
+      <div class="linha"><span>Placa de avaliação com NFC</span><span>R$ 247</span></div>
+      <div class="linha" style="border:0;font-weight:500;"><span>Tudo junto</span><span><s class="peq">R$ 4.038</s> <span style="font:400 19px 'Jost';color:var(--rosee);">R$ 3.190</span></span></div>
+      <p class="peq" style="margin:4px 0 0;">Em até 3 vezes. Sem o vídeo: R$ 1.790.</p>
+    </div>
+    <div class="card"><p class="rotulo" style="margin-top:0">Presença</p><div class="preco">R$ 497 <small>/ mês</small></div>
+      <ul class="ck peq"><li>Loja hospedada e mantida</li><li>Google ativo, publicação semanal</li><li>Resposta às avaliações</li><li>Relatório do mês</li></ul></div>
+    <div class="card" style="border:1px solid var(--rosee);"><p class="rotulo" style="margin-top:0">Presença + Anúncios <span class="peq">· recomendado</span></p><div class="preco">R$ 797 <small>/ mês</small></div>
+      <ul class="ck peq"><li>Tudo do Presença</li><li>Anúncios no Google montados e cuidados</li><li>Ajuste semanal das campanhas</li><li>Verba à parte, direto ao Google</li></ul></div>
+  </div>
+  <p class="peq" style="margin-top:14px;">Contrato mínimo de 6 meses. Opcional: vídeos editados a partir do que a loja grava (roteiro + até 8 vídeos por mês), mais R$ 400 por mês. Domínio .com.br (cerca de R$ 40 por ano) no nome da loja.</p>
+  <div class="pe"><span>Luiza Rabelo · Proposta</span><span>Valores válidos por 15 dias</span></div>
+</section>
+
+<!-- 10 PRÓXIMO PASSO -->
+<section class="slide escuro" style="display:flex;flex-direction:column;justify-content:center;">
+  <p class="sobre">Próximo passo</p>
+  <h1 style="font-size:46px;max-width:800px;margin-bottom:16px;">A loja online está pronta. <em>Falta só</em> abrir as portas.</h1>
+  <p style="color:#CFC4BA;font-size:15px;max-width:60ch;">Aprovando, a loja vai para o domínio da Luiza Rabelo na primeira semana, o Google fica arrumado, a placa chega ao balcão e o vídeo apresenta a marca para o Brasil.</p>
+  <div class="pe"><span>Luiza Rabelo · Proposta</span><span>Outubro de 2026</span></div>
+</section>
+
+</body>
+</html>

@@ -37,3 +37,6 @@ Pendente dele: criar repo rruandev/luiza-rabelo-site (público, vazio) + colabor
 ## 17/10 tarde: proposta v2 (site + Google Ads + GMN + placa)
 - proposta-v2/Proposta-Luiza-Rabelo-Site-e-Google.pdf (7 slides, SEM página de preços a pedido do Ribeiro 17/10). Contato: William. Preços que sugeri (não estão no PDF): implantação R$1.490, mensal R$697, verba R$30/dia.
 - Link limpo (sem index.html) pedido ao PC; conferir.
+
+## 21/10: proposta v3 (loja + Google + anúncios + vídeo 3D)
+- proposta-v3/Proposta-Luiza-Rabelo-v3.pdf (10 slides, com preços) e ...-sem-precos.pdf (9). Implantação R$ 3.190 com vídeo / R$ 1.790 sem + Presença+Anúncios R$ 797/mês + verba R$ 30/dia. Tabela única: interno/PRECOS-E-CUSTOS.md. O vídeo em si é feito em outra thread.
